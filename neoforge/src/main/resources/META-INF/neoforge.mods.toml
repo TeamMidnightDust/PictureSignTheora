@@ -1,0 +1,38 @@
+modLoader = "javafml"
+loaderVersion = "[2,)"
+#issueTrackerURL = ""
+license = "MIT License"
+
+[[mods]]
+modId = "picturesign-theora"
+version = "${version}"
+displayName = "PictureSign: Theora"
+logoFile = "icon.png"
+authors = "unascribed, Motschen"
+description = '''
+Adds support for Theora, Vorbis and OGG to PictureSign
+'''
+
+[[mixins]]
+config = "picturesign-theora.mixins.json"
+
+[[dependencies.visualoverhaul]]
+modId = "neoforge"
+mandatory = true
+versionRange = "[21.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.visualoverhaul]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.21,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.visualoverhaul]]
+modId = "picturesign"
+mandatory = true
+versionRange = "[1.0,)"
+ordering = "AFTER"
+side = "BOTH"

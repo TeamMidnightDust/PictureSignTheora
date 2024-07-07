@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "picturesign-theora",
+  "version": "${version}",
+
+  "name": "PictureSign: Theora",
+  "description": "Adds support for Theora, Vorbis and OGG to PictureSign",
+  "authors": [
+    "unascribed",
+    "Motschen"
+  ],
+  "contact": {
+    "homepage": "https://www.midnightdust.eu/",
+    "sources": "https://github.com/TeamMidnightDust/PictureSignTheora",
+    "issues": "https://github.com/TeamMidnightDust/PictureSignTheora/issues"
+  },
+
+  "license": "MIT",
+  "icon": "assets/picturesign/icon.png",
+
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "eu.midnightdust.picturesign_theora.fabric.PictureSignTheoraClientFabric"
+    ]
+  },
+
+  "depends": {
+    "picturesign": "*"
+  },
+  "mixins": [
+    "picturesign-theora.mixins.json"
+  ]
+}
